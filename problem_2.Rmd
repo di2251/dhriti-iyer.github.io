@@ -5,6 +5,8 @@ output:
     orientation: columns
     vertical_layout: fill
     source_code: embed
+    navbar:
+      - {title: "Home", href: index.html, align: left}
 ---
 ```{r, message=FALSE}
 library(tidyverse)
@@ -113,6 +115,3 @@ manhattan_inspections |>
     yaxis = list(title = "Mean inspection score"),
     legend = list(orientation = "h", y = -0.15))
 ```
-
-rmarkdown::render("problem_2.Rmd", output_format = "flexdashboard::flex_dashboard")
-
