@@ -114,3 +114,5 @@ manhattan_inspections |>
     legend = list(orientation = "h", y = -0.15))
 ```
 
+rmarkdown::render("problem_2.Rmd", output_format = "flexdashboard::flex_dashboard")
+
