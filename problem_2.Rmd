@@ -38,6 +38,9 @@ manhattan_inspections =
   select(camis, dba, cuisine, inspection_date, inspection_type, score, grade, latitude, longitude)
 ```
 
+Column {data-width=550}
+-----------------------------------------------------------------------
+
 ### Most recent letter grade for each Manhattan restaurant
 ```{r scatterplot}
 latest_grade = 
@@ -61,6 +64,9 @@ latest_grade |>
     yaxis = list(title = "Latitude", scaleanchor = "x", scaleratio = 1.32),
     legend = list(title = list(text = "Grade")))
 ```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
 
 ### Inspection scores for the 10 most common cuisines
 ```{r boxplot}
